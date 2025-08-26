@@ -1,7 +1,0 @@
-commands:
-  label:
-    enabled: true
-  removeLabel:
-    enabled: true
-  reviewer:
-    enabled: true

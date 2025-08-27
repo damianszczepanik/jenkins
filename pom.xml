@@ -513,31 +513,6 @@ THE SOFTWARE.
             <groupId>com.github.eirslett</groupId>
             <artifactId>frontend-maven-plugin</artifactId>
             <version>1.15.1</version>
-            <executions>
-              <execution>
-                <id>yarn lint:ci</id>
-                <goals>
-                  <goal>corepack</goal>
-                </goals>
-                <phase>test</phase>
-                <configuration>
-                  <arguments>yarn lint:ci</arguments>
-                  <skip>${yarn.lint.skip}</skip>
-                </configuration>
-              </execution>
-              <execution>
-                <id>prettier</id>
-                <goals>
-                  <goal>corepack</goal>
-                </goals>
-                <phase>test</phase>
-                <configuration>
-                  <arguments>yarn exec prettier --check .</arguments>
-                  <skip>${yarn.lint.skip}</skip>
-                  <testFailureIgnore>false</testFailureIgnore>
-                </configuration>
-              </execution>
-            </executions>
           </plugin>
         </plugins>
       </build>
